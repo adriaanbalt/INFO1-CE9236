@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class View;
 
-@interface HW01HelloAppDelegate : NSObject <UIApplicationDelegate>
+@interface HelloAppDelegate: NSObject <UIApplicationDelegate> {
+    View *view;
+    UIWindow *_window;
+}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @end

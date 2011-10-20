@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface View : UIView
+@interface View : UIView{
+    //in the file View.h, inside the curly braces
+	NSString *string;
+	CGPoint point;
+	UIFont *font;
+}
+
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic) CGPoint point;
+@property (nonatomic, retain) UIFont *font;
 
 @end
